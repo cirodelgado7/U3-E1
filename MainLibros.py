@@ -12,7 +12,7 @@ if __name__ == '__main__':
               "1. Inciso 1"
               "\n2. Inciso 2"
               "\n3. Salir")
-        op = input('Ingrese una opcion: ')
+        op = int(input('Ingrese una opcion: '))
         if op in range(1, 4) and type(op) is not str:
             menu.opcion(op, libros)
             salir = op == 3
